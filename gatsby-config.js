@@ -16,10 +16,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-google-spreadsheet',
       options: {
-        spreadsheetId: '1AmhIyVs7Po-jz5Tvd73-JPe14VXnyfiystEoCQEnARc',
+        spreadsheetId: '13F3dYpd6BU7GSkfWZ7IjEn4K0whgEZw_gIhftQ4LVas',
         spreadsheetName: 'Bikes',
         typePrefix: "GoogleSheet",
-        credentials: require('./config_secret.json')
+        credentials: require('./config_secrets.json')
       }
     },
 

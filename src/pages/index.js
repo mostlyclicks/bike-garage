@@ -11,7 +11,7 @@ const IndexPage = ( {data} ) => (
   <table>
 
     {
-      data.allGoogleSheetBikesBikes.edges.map( bike => (
+      data.allGoogleSheetBikesSheet1.edges.map( bike => (
         <tr>
           <td>{bike.node.bikeMake}</td>
           <td>{bike.node.bikeModel}</td>
@@ -26,7 +26,7 @@ const IndexPage = ( {data} ) => (
 
 export const query = graphql`
   query {
-    allGoogleSheetBikesBikes {
+    allGoogleSheetBikesSheet1 {
       edges {
         node {
           bikeMake
