@@ -22,6 +22,15 @@ module.exports = {
         credentials: require('./config_secret.json')
       }
     },
+
+    {
+      resolve: "gatsby-source-strava",
+      options {
+        token: process.env.STRAVA_TOKEN
+      }
+    },
+
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
