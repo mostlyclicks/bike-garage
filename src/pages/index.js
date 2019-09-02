@@ -8,11 +8,19 @@ import Layout from "../components/layout"
 
 const IndexPage = ( {data} ) => (
   <Layout>
+  <table>
+
     {
       data.allGoogleSheetBikesBikes.edges.map( bike => (
-        <li>{bike.node.bikeMake} - {bike.node.bikeModel} - {bike.node.bikeColor}</li>
+        <tr>
+          <td>{bike.node.bikeMake}</td>
+          <td>{bike.node.bikeModel}</td>
+          <td>{bike.node.bikeColor}</td>
+          <td>{bike.node.bikeSize}</td>  
+        </tr>
       ))
     }
+    </table>
   </Layout>
 )
 
@@ -24,6 +32,7 @@ export const query = graphql`
           bikeMake
           bikeModel
           bikeColor
+          bikeSize
         }
       }
     }
