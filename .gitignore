@@ -15,6 +15,7 @@ pids
 lib-cov
 
 config_secret.json
+config_secrets.json
 
 # Coverage directory used by tools like istanbul
 coverage

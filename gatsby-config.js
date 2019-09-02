@@ -25,9 +25,9 @@ module.exports = {
 
     {
       resolve: "gatsby-source-strava",
-      options {
-        token: process.env.STRAVA_TOKEN
-      }
+        options: {
+          token: process.env.STRAVA_TOKEN
+        }
     },
 
 
