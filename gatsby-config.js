@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Bike Garage`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -12,6 +12,15 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-source-google-spreadsheet',
+      options: {
+        spreadsheetId: '1AmhIyVs7Po-jz5Tvd73-JPe14VXnyfiystEoCQEnARc',
+        spreadsheetName: 'Bikes',
+        typePrefix: "GoogleSheet",
+        credentials: require('./config_secret.json')
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

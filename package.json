@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.1.4",
     "gatsby-plugin-sharp": "^2.2.13",
     "gatsby-source-filesystem": "^2.1.11",
+    "gatsby-source-google-spreadsheet": "^2.0.0",
     "gatsby-transformer-sharp": "^2.2.7",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
@@ -19,7 +20,9 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
   },
   "keywords": [
     "gatsby"
