@@ -23,12 +23,12 @@ module.exports = {
       }
     },
 
-    {
-      resolve: "gatsby-source-strava",
-        options: {
-          token: process.env.STRAVA_TOKEN
-        }
-    },
+    // {
+    //   resolve: "gatsby-source-strava",
+    //     options: {
+    //       token: process.env.STRAVA_TOKEN
+    //     }
+    // },
 
 
     `gatsby-transformer-sharp`,
