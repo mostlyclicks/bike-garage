@@ -1,6 +1,8 @@
 import React from "react"
 // import { Link } from "gatsby"
 import { graphql } from "gatsby"
+// require('dotenv').config();
+// import { dotenv } from 'dotenv'
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
